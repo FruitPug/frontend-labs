@@ -1,0 +1,26 @@
+.red-square {
+    width: 150px;
+    height: 150px;
+    background-color: #d10000;
+    position: relative;
+}
+
+.plus::before, .plus::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+}
+
+.plus::before {
+    width: 30px;
+    height: 80px;
+}
+
+.plus::after {
+    width: 80px;
+    height: 30px;
+}
