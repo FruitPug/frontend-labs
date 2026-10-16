@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пекур Р.О., ІМ-44, Лаб 5, Вар 2</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<h1>Завдання 1. Перевірка форми</h1>
+
+<form id="userForm" novalidate>
+    <div class="form-row">
+        <label for="fullName">ПІБ (ТТТТТТ Т.Т.):</label>
+        <input type="text" id="fullName" name="ПІБ"
+               placeholder="Наприклад, Пашнюк І.О.">
+        <span class="error"></span>
+    </div>
+
+    <div class="form-row">
+        <label for="group">Група (ТТ-ЧЧ):</label>
+        <input type="text" id="group" name="Група"
+               placeholder="ІМ-44">
+        <span class="error"></span>
+    </div>
+
+    <div class="form-row">
+        <label for="phone">Телефон ((ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ):</label>
+        <input type="text" id="phone" name="Телефон"
+               placeholder="(067)-123-45-67">
+        <span class="error"></span>
+    </div>
+
+    <div class="form-row">
+        <label for="idCard">ID-card (ТТ №ЧЧЧЧЧЧ):</label>
+        <input type="text" id="idCard" name="ID-card"
+               placeholder="АБ №123456">
+        <span class="error"></span>
+    </div>
+
+    <div class="form-row">
+        <label for="faculty">Факультет (ТТТТ):</label>
+        <input type="text" id="faculty" name="Факультет"
+               placeholder="ФІОТ">
+        <span class="error"></span>
+    </div>
+
+    <button type="submit">Перевірити дані</button>
+</form>
+
+<hr>
+
+<h1>Завдання 2. Таблиця 6×6</h1>
+
+<div class="palette">
+    <label for="colorPicker">Оберіть колір:</label>
+    <input type="color" id="colorPicker" value="#33aaff">
+</div>
+
+<table id="numberTable">
+    <tbody></tbody>
+</table>
+</body>
+</html>
